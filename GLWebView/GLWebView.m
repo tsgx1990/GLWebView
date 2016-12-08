@@ -100,6 +100,8 @@
 - (void)createUIWebView
 {
     self.mUIWebView = [[UIWebView alloc] init];
+    self.mUIWebView.opaque = NO;
+    self.mUIWebView.backgroundColor = [UIColor whiteColor];
     self.mUIWebView.delegate = self;
     self/*.mUIWebView*/.suppressesIncrementalRendering = self.webViewConfiguration.suppressesIncrementalRendering;
     self/*.mUIWebView*/.allowsInlineMediaPlayback = self.webViewConfiguration.allowsInlineMediaPlayback;
